@@ -124,7 +124,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier.padding(bottom = 5.dp, start = 4.dp)
             )
-            Column(modifier = Modifier.padding(bottom = 15.dp)) {
+            Column(modifier = Modifier.padding(bottom = 18.dp)) {
                 statusList.forEach { item ->
                     Row(
                         modifier = Modifier
