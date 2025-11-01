@@ -118,3 +118,30 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 }
             }
 
+
+            Text(
+                text = "Status Perkawinan",
+                style = MaterialTheme.typography.bodyMedium,
+                modifier = Modifier.padding(bottom = 5.dp, start = 4.dp)
+            )
+            Column(modifier = Modifier.padding(bottom = 15.dp)) {
+                statusList.forEach { item ->
+                    Row(
+                        modifier = Modifier
+                            .selectable(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            )
+                            .padding(vertical = 2.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        RadioButton(
+                            selected = textStatus == item,
+                            onClick = { textStatus = item }
+                        )
+                        Text(item)
+                    }
+                }
+            }
+
+            
