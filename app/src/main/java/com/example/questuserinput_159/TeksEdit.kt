@@ -160,3 +160,19 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     .padding(bottom = 15.dp)
             )
 
+
+            Button(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 10.dp, bottom = 5.dp),
+                enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty(),
+                onClick = {
+                    nama = textNama
+                    jenis = textJK
+                    alamat = textAlamat
+                    status = textStatus
+                }
+            ) {
+                Text("Submit")
+            }
+
