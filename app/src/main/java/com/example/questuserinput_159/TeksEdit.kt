@@ -180,7 +180,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             if (nama.isNotEmpty()) {
                 Card(
                     elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color.Black),
+                    colors = CardDefaults.cardColors(containerColor = Color.Blue),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(top = 16.dp)
