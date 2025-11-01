@@ -144,4 +144,19 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 }
             }
 
-            
+
+            Text(
+                text = "Alamat",
+                style = MaterialTheme.typography.bodyMedium,
+                modifier = Modifier.padding(bottom = 5.dp, start = 4.dp)
+            )
+            OutlinedTextField(
+                value = textAlamat,
+                singleLine = true,
+                label = { Text("Masukkan Alamat Lengkap") },
+                onValueChange = { textAlamat = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 15.dp)
+            )
+
