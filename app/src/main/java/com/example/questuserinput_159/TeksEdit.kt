@@ -65,3 +65,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             )
         }
 
+
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 120.dp, start = 10.dp, end = 10.dp)
+                .background(Color.White, shape = RoundedCornerShape(16.dp))
+                .padding(10.dp),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.Start
+        ) {
+
