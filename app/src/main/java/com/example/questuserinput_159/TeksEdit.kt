@@ -42,7 +42,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
     var status by remember { mutableStateOf("") }
 
     val gender = listOf("Laki-laki", "Perempuan")
-    val statusList = listOf("Belum Menikah", "Menikah", "Duda")
+    val statusList = listOf("Belum Menikah", "Menikah")
 
     Box(
         modifier = Modifier
