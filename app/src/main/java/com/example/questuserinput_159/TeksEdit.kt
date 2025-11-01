@@ -176,3 +176,25 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 Text("Submit")
             }
 
+
+            if (nama.isNotEmpty()) {
+                Card(
+                    elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.Black),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 16.dp)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(horizontal = 5.dp, vertical = 15.dp)
+                    ) {
+                        Text(text = "Nama   : $nama", color = Color.White)
+                        Text(text = "Gender : $jenis", color = Color.White)
+                        Text(text = "Status Perkawinan : $status", color = Color.White)
+                        Text(text = "Alamat : $alamat", color = Color.White)
+                    }
+                }
+            }
+        }
+    }
+}
