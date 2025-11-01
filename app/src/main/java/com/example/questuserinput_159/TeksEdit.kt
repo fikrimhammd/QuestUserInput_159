@@ -44,3 +44,24 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
     val gender = listOf("Laki-laki", "Perempuan")
     val statusList = listOf("Belum Menikah", "Menikah")
 
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.LightGray)
+    ) {
+
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(100.dp)
+                .background(MaterialTheme.colorScheme.primary),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "Formulir Data Diri",
+                color = Color.White,
+                style = MaterialTheme.typography.titleLarge
+            )
+        }
+
